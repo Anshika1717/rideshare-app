@@ -1,0 +1,119 @@
+.ride-request {
+  margin-left: 220px;
+  padding: 2.5rem 2rem;
+  max-width: 600px;
+  background: #fff;
+}
+.ride-request h2 {
+  font-size: 2rem;
+  color: #2979FF;
+  display: flex;
+  align-items: center;
+}
+.ride-map {
+  width: 100%;
+  height: 350px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #2979ff22;
+  margin-bottom: 1.5rem;
+  border: 2px solid #2979FF;
+}
+.map-instructions {
+  margin-bottom: 0.7rem;
+  color: #00E5FF;
+  font-size: 1.05rem;
+}
+.ride-request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.input-row {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  border: 2px solid #444;
+}
+.input-icon {
+  color: #2979FF;
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+}
+.ride-request-form input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #222;
+}
+.grey-btn {
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px #2222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grey-btn:hover, .grey-btn:focus {
+  background: #222;
+  color: #fff;
+  transform: scale(1.04);
+}
+.animated-btn:active {
+  animation: btnBounce 0.25s;
+}
+.login-prompt {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.login-prompt p {
+  color: #2d3436;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.login-btn {
+  background: #2979FF;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.login-btn:hover {
+  background: #1a5fb4;
+  transform: scale(1.05);
+}
+
+@keyframes btnBounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(0.95); }
+  60% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+.location-summary {
+  margin-top: 1.2rem;
+  color: #888;
+  font-size: 1rem;
+}

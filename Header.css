@@ -1,0 +1,119 @@
+.header {
+  background: linear-gradient(90deg, hsl(220, 16%, 11%) 0%, #293a3c 100%);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-radius: 0 0 18px 18px; */
+  box-shadow: 0 2px 8px rgba(41,121,255,0.07);
+  position: relative;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem; /* slightly reduced for more links */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.header-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0.35rem 1rem;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s;
+}
+
+.header-link.active,
+.header-link:focus,
+.header-link:hover {
+  background: #2979FF;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.dropdown-toggle:hover {
+  background: #00E5FF22;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  background: #232a34;
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px #2979ff22;
+  min-width: 190px;
+  z-index: 100;
+  padding: 0.7rem 0;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: none;}
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.2rem;
+  color: #00E5FF;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background: #e3f0ff;
+  color: #222;
+  outline: none;
+}
+
+/* Responsive: Stack links on small screens */
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1vw;
+  }
+  .header-left {
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
+  .logo {
+    margin-bottom: 0.7rem;
+  }
+}

@@ -1,0 +1,22 @@
+.ride-detail {
+  margin-left: 200px;
+  padding: 3rem 2rem;
+  max-width: 500px;
+}
+
+.detail-card {
+  background: var(--background);
+  border: 2px solid var(--accent);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.status.completed {
+  color: #2cb67d;
+  font-weight: bold;
+}
+.status.ongoing {
+  color: #fbbf24;
+  font-weight: bold;
+}
